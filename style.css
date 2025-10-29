@@ -1,0 +1,199 @@
+@font-face {
+    font-family: myFont;
+    src: url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Caprasimo&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+}
+:root {
+    background-color: #dbe2e9;
+}
+.container {
+    display: grid;
+    grid-gap: 1rem 1px;
+    grid-template: 15% repeat(4, minmax(200px, 1fr)) / repeat(4, 1fr);
+}
+.side {
+    grid-row: 1 / -1 ;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: .78rem;
+    background-color: #0096c7;
+    color: whitesmoke;
+}
+.header {
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template: 1fr 1.5fr / 1fr;
+    background-color: white;
+}
+.main {
+    grid-area: 2 / 2 / -1 / -1;
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template: 1fr / 3fr 1fr;
+    align-items: stretch;
+}
+.dummy-h, .dummy-h1 {
+    /* border: 2px solid darkgreen; */
+    display: flex;
+    gap: 2ch;
+    align-items: center;
+}
+.dummy-m1 {
+    /* border: 2px solid darkblue; */
+    display: grid;
+    grid-gap: 1rem;
+    padding: 0ch 1ch .5ch 2ch ;
+    grid-template: 5ch repeat(3, minmax(15ch, 1fr)) / repeat(2, 1fr) ;
+}
+.dummy {
+    border: 2px solid blueviolet;
+}
+.dummy-m2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(2, 5ch 1fr);
+    padding: 0ch 2ch .5ch .5ch ;
+}
+#dash {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    margin-left: 3ch;
+    font-size: 1.33rem;
+}
+ul {
+    list-style-type: none;
+}
+ul > li {
+    margin-bottom: 1.2rem;
+}
+a {
+    font-size: 1.22rem;
+    text-decoration: none;
+    word-spacing: 1.5ch;
+    padding: 1rem;
+    color: whitesmoke;
+}
+a:hover {
+    color: #bec3c6;
+}
+#dash > h2 {
+    color: whitesmoke;
+}
+.dummy-h > img {
+    height: 4ch;
+    width: 4ch;
+    position: relative;
+    /* top: 1ch; */
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: .5ch;
+}
+svg {
+    position: relative;
+    top: .6ch;
+}
+.dummy-h > label {
+    width: 70%;
+    margin-right: auto;
+    margin-left: 3ch;
+}
+input {
+    width: 80%;
+    margin-left: 1ch;
+    height: 3ch;
+    border-radius: 2rem;
+    background-color: #dbe2e9;
+}
+.dummy-h > h3 {
+    margin-right: 5ch;
+    font-family: myFont;
+    font-size: 1rem;
+}
+.dummy-h1 > img {
+    height: 7ch;
+    width: 7ch;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: .5ch;
+    margin-left: 3ch;
+}
+.dummy-h1 > label {
+    margin-right: auto;
+}
+.dummy-h1 > button {
+    position: relative;
+    right: 5ch;
+    width: 4rem;
+    padding: .5ch;
+    background-color: #0096c7;
+    color: whitesmoke;
+    border: 1px solid #0096c7 ;
+    border-radius: 7px;
+}
+.dummy-h1 > button:hover {
+    background-color: #49769f;
+}
+.dummy-h1 > button:active {
+    border: 4px solid #023859;
+    padding: 2px;
+    transform: scale(.88);
+}
+#contentHead {
+    grid-area: 1/1/1/-1;
+    display: flex;
+    align-items: center;
+    padding-left: 2ch;
+    background-color: #dbe2e9;
+    /* justify-content: center; */
+}
+.dummy-m1 > .dummy {
+    border: none;
+    border-radius: 10px;
+    border-left: 8px solid #edc001;
+    background-color: white;
+    padding: 2ch;
+    display: grid;
+    grid-template-rows: 1fr 5ch;
+}
+.dummy-m1 > .dummy > .svgHolder {
+    display: flex;
+    padding: 3ch;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3.5ch;
+}
+.dummy-m2 > .sideContent {
+    display: flex;
+    align-items: center;
+    padding-left: 2ch;
+}
+.dummy-m2 > .dummy {
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2ch;
+    font-size: .8rem;
+}
+.dummy-m2 > .dummy > .border {
+    border-bottom: 2px solid;
+}
+.dummy-m2 > .trending {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 3ch;
+}
+.dummy-m2 > .trending > div {
+    display: flex;
+    gap: 2ch;
+    justify-content: flex-start;
+}
+.dummy-m2 > .trending > div > img {
+    height: 7ch;
+    width: 7ch;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: .5ch;
+    position: relative;
+    top: 2ch;
+}
